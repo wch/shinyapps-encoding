@@ -1,3 +1,10 @@
+To reproduce the problem, make sure you have the latest versions of these packages installed:
+
+
+```S
+devtools::install_github(c('rstudio/rmarkdown', 'yihui/knitr',
+                           'rstudio/ggvis@new-syntax', 'rstudio/shinyapps'))
+
 library(rmarkdown)
 library(shinyapps)
 
@@ -15,3 +22,4 @@ deployApp('testapp')
 render('test.Rmd')
 browseURL('test.html')
 # The gear icon is messed up
+```
